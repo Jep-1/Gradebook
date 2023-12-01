@@ -1,3 +1,3 @@
-int addStudent(int);
-int listStudents(int);
-int searchName(int);
+void addStudent(int);
+void listStudents(int);
+void searchName(int);

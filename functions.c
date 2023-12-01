@@ -11,7 +11,7 @@ struct Student{
 
 struct Student students[MAX_STUDENTS];
 
-int addStudent(int totalStudents){
+void addStudent(int totalStudents){
     if(totalStudents < MAX_STUDENTS){
     struct Student newStudent;
     printf("Enter first name: ");
@@ -26,12 +26,11 @@ int addStudent(int totalStudents){
 
     else{
         fprintf(stderr, "Error, max amount of students reached!\n");
-        return 0;
     }
 
 }
 
-int listStudents(int totalStudents){
+void listStudents(int totalStudents){
     if (totalStudents == 0){
         printf("Error, there are no students in the system!");
     }
@@ -43,7 +42,7 @@ int listStudents(int totalStudents){
     }
 }
 
-int searchName(int totalStudents){
+void searchName(int totalStudents){
     char name[25];
     int found = 0;
     printf("\nEnter last name: ");
