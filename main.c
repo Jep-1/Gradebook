@@ -2,8 +2,6 @@
 #include <string.h>
 #include "functions.h"
 
-//Testing updated repository.
-
 int main(){
     int choice;
     int totalStudents = 0;
